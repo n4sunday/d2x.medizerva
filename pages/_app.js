@@ -1,9 +1,16 @@
 import App, { Container } from 'next/app'
 import React from 'react'
-import withReduxStore from '../redux/lib/with-redux-store'
-import { Provider } from 'react-redux'
 import Head from 'next/head'
 import Styles from './styles'
+//-----------------REDUX--------------------------------
+import withReduxStore from '../redux/lib/with-redux-store'
+import { Provider } from 'react-redux'
+import thunk from 'redux-thunk'
+import logger from 'redux-logger'
+import rootReducer from '../redux/reducers'
+import { createStore, applyMiddleware } from 'redux'
+
+export const store = createStore(rootReducer,applyMiddleware(logger,thunk))
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -22,11 +29,13 @@ class MyApp extends App {
       <div>
         <Head>
           <title>d2x medizerva</title>
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet"></link>
+          <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
         </Head>
         <Container>
-          <Provider store={reduxStore}>
+          <Provider store={store}>
             <Component {...pageProps} />
           </Provider>
         </Container>

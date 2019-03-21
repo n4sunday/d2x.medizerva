@@ -1,5 +1,7 @@
 import Header from '../components/Header'
-import HelpQandA from '../components/helpQandA'
+import HelpQandA from '../components/help/helpQandA'
+import History from '../components/help/history'
+
 const help = () => (
     <div><Header />
         <div className='container-fluid' id='help'>
@@ -13,7 +15,7 @@ const help = () => (
                 </div>
 
                 <div className='col-xs-12 col-sm-12 col-md-3 col-xl-4'>
-                    Conclude
+                    <History/>
                 </div>
             </div>
         </div>

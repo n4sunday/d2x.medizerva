@@ -1,9 +1,16 @@
-import { combineReducers } from 'redux';
-import numberReducer from './numberReducer';
-import editName from './editName';
+import { combineReducers } from 'redux'
+import numberReducer from './numberReducer'
+import editName from './editName'
+import apiReducer from './apiReducer'
+import mainStore from './mainStore'
 
-export default combineReducers({
-    //number: () => 0
+
+const rootReducer = combineReducers({
+    api: apiReducer,
     number: numberReducer,
-    sunday: editName
-});
+    sunday: editName,
+    main: mainStore,
+})
+
+export default rootReducer
+

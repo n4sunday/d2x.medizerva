@@ -5,15 +5,15 @@ import hospital from '../../img/home/hospital.svg'
 
 const service = () => (
     <div id='service' className='container'>
+        
         <div className='row'>
 
             <div id='service-name' className='col-sm-12 col-md-12 col-lg-3'>
-                <h2>บริการของเรา</h2>
+                <h2>บริการของเรา</h2> 
             </div>
 
             
             <div id='' className='col-sm-12 col-md-12 col-lg-9'>
-
 
                     <div className='row'>
                         <div id='service-content' className='col-xs-12 col-sm-12 col-md-6 col-lg-6'>

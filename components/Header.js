@@ -1,5 +1,7 @@
 import logo_img from '../img/Logo_td2x.png'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
 const Header = () => (
     <div>
 
@@ -25,9 +27,10 @@ const Header = () => (
                         <Link href="/">
                             <li><a>สมัครสมาชิก</a></li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/login">
                             <li><a>ลงชื่อเข้าใช้</a></li>
                         </Link>
+                        
                     </ul>
 
                 </div>
