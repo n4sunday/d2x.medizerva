@@ -3,7 +3,7 @@ import axios from 'axios'
 
 //-------------------------API-Server----------------------------
 //const apiurl = 'https://d2xapi.medizerva.com/'
-const apiurl = 'http://localhost:5000/api'
+const apiurl = 'http://157.230.43.83:8000/api'
 export const getAPI = () => async (dispatch) => {
     try {
         console.log('Get API');
@@ -20,7 +20,7 @@ export const getAPI = () => async (dispatch) => {
     }
 }
 export const getApiSucces = apiData => ({
-    type: 'GET_API_SUCCESS', apiData
+    type: 'GET_API_SUCCESS', apiData 
 })
 export const getApiFailed = () => ({ type: 'GET_API_FAILED' })
 

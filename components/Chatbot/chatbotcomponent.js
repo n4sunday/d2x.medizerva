@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Pusher from 'pusher-js';
+import axios from 'axios';
 
 class App extends Component {
     constructor(props) {
@@ -44,14 +45,22 @@ class App extends Component {
             conversation: [...this.state.conversation, msg],
         });
 
-        fetch('http://d2x.medizerva.com:5000/chat', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                message: this.state.userMessage,
-            }),
-        });
-
+        axios.post('http://157.230.43.83:5000/chat', {
+            message: this.state.userMessage
+        })
+            .then((response) => {
+                console.log(response)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        // fetch('http://157.230.43.83:5000/chat', {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify({
+        //         message: this.state.userMessage,
+        //     }),
+        // });
         this.setState({ userMessage: '' });
     };
 
@@ -66,7 +75,7 @@ class App extends Component {
                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
                         <div className="bubble">
                             {text}
-                            <div class="corner"></div>                    
+                            <div class="corner"></div>
                         </div>
                         {/* <span className="chat-content">{text}</span> */}
                     </div>
@@ -104,7 +113,7 @@ class App extends Component {
                             placeholder="พิมพ์ข้อความ"
                         />
                     </form>
-                    
+
                     <button id="send"></button>
                 </div>
             </div>
