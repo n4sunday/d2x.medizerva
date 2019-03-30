@@ -3,9 +3,9 @@ import Link from 'next/link'
 const Footer = () => (
     <div >
         <div id='footer'>
-        <p>© Copyright T-D2X. All Rights Reserved v0.1.0</p>
-        
-    </div>
+            <p>© Copyright T-D2X. All Rights Reserved v0.1.1</p>
+
+        </div>
     </div>
 
 )
