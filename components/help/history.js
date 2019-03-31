@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-var i = 0
+const i = 0
 class History extends Component {
     //renderNumHistory
     rnh(x) {

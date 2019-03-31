@@ -36,11 +36,11 @@ export default class Example extends React.Component {
                             <NavItem><Link href="/"><a className="nav-item nav-link active px-3">หน้าหลัก</a></Link></NavItem>
                             <NavItem><Link href="/help"><a className="nav-item nav-link  px-3">ถามหมอ</a></Link></NavItem>
                             <NavItem><Link href="/"><a className="nav-item nav-link  px-3">ชื้อยา</a></Link></NavItem>
-                            <NavItem><Link href="/"><a className="nav-item nav-link  px-3">ระบบย่อยอาหาร</a></Link></NavItem>
+                            <NavItem><Link href="/"><a className="nav-item nav-link  px-3">โรคระบบย่อยอาหาร</a></Link></NavItem>
                             <NavItem><Link href="/"><a className="nav-item nav-link  px-3">ติดต่อเรา</a></Link></NavItem>
                             <NavItem><Link href="/"><a className="nav-item nav-link  px-3">สมัครสมาชิก</a></Link></NavItem>
                             <NavItem><Link href="/login"><a className="nav-item nav-link  px-3">ลงชื่อเข้าใช้</a></Link></NavItem>
-                            
+                            {/* <NavItem><Link href="/dev"><a className="nav-item nav-link  px-3">DevMode</a></Link></NavItem> */}
                         </Nav>
                     </Collapse>
                 </Navbar>

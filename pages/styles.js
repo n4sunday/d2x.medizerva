@@ -5,7 +5,7 @@ const Styles = () => (
         #load {
             background-color: black;
         }
-        //header
+//-header---------------------------------------->
         #logo_img {
             padding-top: 8px;
             padding-bottom: 8px;
@@ -33,7 +33,9 @@ const Styles = () => (
             opacity: 0.5;
         }
 
-        //Home
+//<--------------------------------------header-
+
+//-home---------------------------------------->
         #service {
             margin-top:30px;
             margin-bottom:30px;
@@ -49,7 +51,7 @@ const Styles = () => (
         #content-img p,h1,button{
             font-family: 'Prompt', sans-serif;  
         }
-        //home -> service
+ //-home->-service------------------------------->
             #service-name h2 {
                 font-family: 'Prompt', sans-serif;
             }
@@ -81,15 +83,15 @@ const Styles = () => (
                 font-family: 'Prompt', sans-serif;
 	            //-webkit-user-select: none;
             }
+//<----------------------------home->-service-
+//<--------------------------------------home-
 
-
-        //help
-        
+//-help------------------------------------->
         #help {
             //background-color: #f5f5f5;
             
         }
-        //help -> helpQandA
+ //-help->-helpQandA------------------------->
             #doctor {
                 border: 2px solid #dedede;
                 background-color: #f1f1f1;
@@ -147,9 +149,10 @@ const Styles = () => (
                 opacity: 0.7;
                 filter: alpha(opacity=50);
             }
-            
+//<-----------------------help->-helpQandA-
+//<-----------------------------------help-
 
-        //Login
+ //-Login--------------------------------->
         #login {
             padding-top: 160px;
             padding-left:150px;
@@ -186,10 +189,9 @@ const Styles = () => (
         .boxlogin {
             width: 100%;
         }
-    
+//<-----------------------------------Login-
 
-
-        //-footer---------------------------------->
+//-footer---------------------------------->
         #footer {
             padding: 50px 0px 10px 0px;
             //position: absolute;
@@ -226,8 +228,9 @@ const Styles = () => (
                 
             }
         }
+//<-----------------------------------footer-
 
-        //-History---------------------------------->
+//-History---------------------------------->
         #historybox p {
                 border: 2px solid #dedede;
                 background-color: #f1f1f1;
@@ -273,9 +276,9 @@ const Styles = () => (
                 z-index: 400;
             }     
 
-        //<-----------------------------------History- 
+//<-----------------------------------History- 
 
-        //-chatbot----------------------------------->
+//-chatbot----------------------------------->
         #bt-popup {
             bottom: 0;
             right:0;
@@ -318,13 +321,11 @@ const Styles = () => (
             -ms-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
             -o-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
             transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-        }
-        
+        }        
         #chat-messages.animate {
             opacity: 1;
             margin-top: 0;
         }
-
         #chatbox label {
             color: #aab8c2;
             font-weight: 600;
@@ -334,19 +335,16 @@ const Styles = () => (
             width: 290px;
             display: block;
         }
-
         #chat-messages div.message {
             padding: 0 0 30px 58px;
             clear: both;
             margin-bottom: 45px;
         }
-
         #chat-messages div.message.right {
             padding: 0 58px 30px 0;
             margin-right: -19px;
             margin-left: 19px;
         }
-
         #chat-messages .message img {
             float: left;
             margin-left: -38px;
@@ -354,13 +352,11 @@ const Styles = () => (
             width: 30px;
             margin-top: 12px;
         }
-
         #chat-messages div.message.right img {
             float: right;
             margin-left: 0;
             margin-right: -38px;
         }
-
         .message .bubble {
             background: #f0f4f7;
             font-size: 13px;
@@ -371,12 +367,10 @@ const Styles = () => (
             position: relative;
             float: left;
         }
-
         #chat-messages div.message.right .bubble {
             float: right;
             border-radius: 5px 5px 0px 5px;
         }
-
         .bubble .corner {
             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/bubble-corner.png") 0 0 no-repeat;
             position: absolute;
@@ -385,13 +379,11 @@ const Styles = () => (
             left: -5px;
             bottom: 0;
         }
-
         div.message.right .corner {
             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/bubble-cornerR.png") 0 0 no-repeat;
             left: auto;
             right: -5px;
         }
-
         .bubble span {
             color: #aab8c2;
             font-size: 11px;
@@ -399,7 +391,6 @@ const Styles = () => (
             right: 0;
             bottom: -22px;
         }
-
         #sendmessage {
             height: 60px;
             border-top: 1px solid #e7ebee;
@@ -413,7 +404,6 @@ const Styles = () => (
         #sendmessage input {
             border
         }
-
         #sendmessage input {
             background: #fff;
             margin: 21px 0 0 21px;
@@ -424,11 +414,9 @@ const Styles = () => (
             font-weight: 400px;
             color: #aab8c2;
         }
-
         #sendmessage input:focus {
             outline: 0;
         }
-
         #sendmessage button {
             background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/send.png") 0 -41px no-repeat;
             width: 30px;
@@ -438,12 +426,10 @@ const Styles = () => (
             top: 23px;
             border: none;
         }
-
         #sendmessage button:hover {
             cursor: pointer;
             background-position: 0 0;
         }
-
         #sendmessage button:focus {
             outline: 0;
         }
@@ -452,9 +438,42 @@ const Styles = () => (
             overflow: hidden;
             border-radius: 6px;
         }
-        //<-------------------------------chatbot-
+//<-------------------------------chatbot-
 
 
+//-conclusion-sheet---------------------------->
+        .card-body h3{
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+      
+        #conclusion-sheet{
+            font-family: 'Sarabun', sans-serif;
+        }
+        #data-user{
+            line-height: 0.3;
+            text-indent: 20px;
+            border-bottom: 2px solid #000;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        #symptom-user{
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        #doctor-advice{
+            text-indent: 40px;
+        }
+        
+        
+//<----------------------------conclusion-sheet-
+//-Dev----------------------------------------->
+           
+
+//<-----------------------------------------Dev-
         @media (max-width: 768px) {
                     //Login
                 #login {

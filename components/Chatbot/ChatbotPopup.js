@@ -14,11 +14,11 @@ class ChatbotPopup extends Component {
             isToggleOn: !state.isToggleOn
         }));
     }
-    renderChatbot(){
-        if(this.state.isToggleOn==false)
-        return (
-            <Chatbotcomponent />
-        )
+    renderChatbot() {
+        if (this.state.isToggleOn == false)
+            return (
+                <Chatbotcomponent />
+            )
     }
 
     render() {
@@ -26,7 +26,7 @@ class ChatbotPopup extends Component {
             <div>
                 <div id='bt-popup' className='block'>
                     {this.renderChatbot()}
-                    <button  onClick={this.handleClick} className='bt-click btn btn-primary btn-block rounded-0' type="button" >คุยกับผู้ช่วย</button>
+                    <button onClick={this.handleClick} className='bt-click btn btn-primary btn-block rounded-0' type="button" >คุยกับผู้ช่วย</button>
                 </div>
 
             </div>
@@ -34,4 +34,5 @@ class ChatbotPopup extends Component {
     }
 }
 
-export default ChatbotPopup            
+export default ChatbotPopup
+// rounded-0

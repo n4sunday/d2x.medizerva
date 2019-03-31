@@ -45,7 +45,7 @@ class App extends Component {
             conversation: [...this.state.conversation, msg],
         });
 
-        axios.post('http://157.230.43.83:5000/chat', {
+        axios.post('http://d2x.medizerva.com:5000/chat', {
             message: this.state.userMessage
         })
             .then((response) => {
@@ -54,13 +54,6 @@ class App extends Component {
             .catch((error) => {
                 console.log(error)
             })
-        // fetch('http://157.230.43.83:5000/chat', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({
-        //         message: this.state.userMessage,
-        //     }),
-        // });
         this.setState({ userMessage: '' });
     };
 
