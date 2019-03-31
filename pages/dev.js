@@ -62,7 +62,6 @@
 // export default connect(mapStateToProps)(dev)
 
 import React, { Component } from 'react';
-import $ from 'jquery'
 class dev extends Component {
     constructor(props) {
         super(props)
