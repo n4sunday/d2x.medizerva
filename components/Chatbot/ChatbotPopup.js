@@ -12,7 +12,7 @@ class ChatbotPopup extends Component {
     handleClick() {
         this.setState(state => ({
             isToggleOn: !state.isToggleOn
-        }));
+        }))
     }
     renderChatbot() {
         if (this.state.isToggleOn == false)

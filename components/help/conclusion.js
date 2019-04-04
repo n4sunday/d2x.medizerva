@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import React, { Component } from 'react';
 class conclusion extends Component {
     rnh(x) {
-        return (<li><em>{this.props.history.hsd[x].hsd1}</em></li>)
+        return (<li>{this.props.history.hsd[x].hsd1}</li>)
     }
     renderHistory() {
         if (this.props.history.hsd[0]) {
@@ -34,14 +34,17 @@ class conclusion extends Component {
                                 <div class="card-body">
                                     <h3><strong>สรุปผลการวินิจฉัย</strong></h3>
                                     <h5><strong>ข้อมูลผู้ป่วย</strong></h5>
-                                    <div id='data-user'><p>ชื่อ : <em>นาย รักชาติ ณ สงขลา</em></p><p>อายุ :  <em>23 ปี</em></p></div>
+                                    <div id='data-user'><p>ชื่อ : นาย รักชาติ ณ สงขลา</p><p>อายุ :  23 ปี</p></div>
                                      <h5><strong>อาการที่แสดง</strong></h5>
                                      <div id='symptom-user'>
                                        
                                         {this.renderHistory()}<br />
                                     </div>
                                     <h5><strong>คำแนะนำของแพทย์</strong></h5>
-                                    <div id='doctor-advice'><p><em>คุณควรนอนหลับผักผ่อนเยอะ ๆ และไปตรวจสุขภาพประจำปีบ้าง และออกกำลังกายอย่างสม่ำเสมอ และไปพบปะพูดคุยกับผู้คนในสังคม</em></p></div>
+                                    <div id='doctor-advice'><p>คุณควรนอนหลับผักผ่อนเยอะ ๆ และไปตรวจสุขภาพประจำปีบ้าง และออกกำลังกายอย่างสม่ำเสมอ และไปพบปะพูดคุยกับผู้คนในสังคม</p></div>
+                                    <h5><strong>ยาสำหรับรักษาอาการ</strong></h5>
+                                    <li>ยาธาตุน้ำขาว</li>
+                                    <li>ยาพาราเซตามอล</li>
                                 </div>
                             </div>
                         </div>

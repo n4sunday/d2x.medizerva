@@ -7,6 +7,7 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
+    Dropdown,
     NavItem,
     NavLink,
     UncontrolledDropdown,
@@ -36,11 +37,25 @@ export default class Example extends React.Component {
                             <NavItem><Link href="/"><a className="nav-item nav-link active px-3">หน้าหลัก</a></Link></NavItem>
                             <NavItem><Link href="/help"><a className="nav-item nav-link  px-3">ถามหมอ</a></Link></NavItem>
                             <NavItem><Link href="/"><a className="nav-item nav-link  px-3">ชื้อยา</a></Link></NavItem>
-                            <NavItem><Link href="/"><a className="nav-item nav-link  px-3">โรคระบบย่อยอาหาร</a></Link></NavItem>
+                            <NavItem><Link href="/disease"><a className="nav-item nav-link  px-3">โรคระบบย่อยอาหาร</a></Link></NavItem>
                             <NavItem><Link href="/"><a className="nav-item nav-link  px-3">ติดต่อเรา</a></Link></NavItem>
-                            <NavItem><Link href="/"><a className="nav-item nav-link  px-3">สมัครสมาชิก</a></Link></NavItem>
-                            <NavItem><Link href="/login"><a className="nav-item nav-link  px-3">ลงชื่อเข้าใช้</a></Link></NavItem>
                             {/* <NavItem><Link href="/dev"><a className="nav-item nav-link  px-3">DevMode</a></Link></NavItem> */}
+                            <UncontrolledDropdown nav inNavbar >
+                                <div id='toggledrop'>
+                                    <DropdownToggle nav caret >จัดการบัญชีผู้ใช้</DropdownToggle>
+                                    <div id='drop'>
+                                        <DropdownMenu >
+                                            <DropdownItem ><Link href="/"><a>ข้อมูลผู้ใช้</a></Link></DropdownItem>
+                                            <DropdownItem ><Link href="/login"><a>ลงชื่อเข้าใช้</a></Link></DropdownItem>
+                                            <DropdownItem ><Link href="/"><a>สมัครสมาชิก</a></Link></DropdownItem>
+                                            <DropdownItem divider />
+                                            <DropdownItem>
+                                                <Link href="/"><a>ออกจากระบบ</a></Link>
+                                            </DropdownItem>
+                                        </DropdownMenu>
+                                    </div>
+                                </div>
+                            </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>

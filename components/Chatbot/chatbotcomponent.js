@@ -1,22 +1,35 @@
-import React, { Component } from 'react';
-import Pusher from 'pusher-js';
-import axios from 'axios';
+import React, { Component } from 'react'
+import Pusher from 'pusher-js'
+import axios from 'axios'
+const api = 'https://d2xapi.medizerva.com/chatbot/'
+//const api = 'http://localhost:5000/'
+
 
 class App extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
             userMessage: '',
-            conversation: [],
+            conversation: [''],
         };
     }
+    messagesEnd = React.createRef()
+
+    componentDidUpdate() {
+        this.scrollToBottom()
+    }
+    scrollToBottom = () => {
+        this.messagesEnd.current.scrollIntoView({ behavior: 'smooth' })
+    }
     componentDidMount() {
+        
+        this.scrollToBottom()
         const pusher = new Pusher('f1c69857418afbff36c5', {
             cluster: 'ap1',
             encrypted: true,
         });
-
-        const channel = pusher.subscribe('bot');
+        const channel = pusher.subscribe('bot')
         channel.bind('bot-response', data => {
             const msg = {
                 text: data.message,
@@ -44,8 +57,9 @@ class App extends Component {
         this.setState({
             conversation: [...this.state.conversation, msg],
         });
+        //console.log('MS', this.state.userMessage);
 
-        axios.post('http://d2x.medizerva.com:5000/chat', {
+        axios.post(api, {
             message: this.state.userMessage
         })
             .then((response) => {
@@ -59,13 +73,13 @@ class App extends Component {
 
     render() {
         const ChatBubble = (text, i, className) => {
-            console.log('text:', text);
-            console.log('I:', i);
-            console.log('className:', className);
+            //console.log('text:', text);
+            //console.log('I:', i);
+            //console.log('className:', className);
             if (className == 'human')
                 return (
                     <div key={`${className}-${i}`} className={`${className} message right`}>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg"  />
                         <div className="bubble">
                             {text}
                             <div class="corner"></div>
@@ -94,11 +108,13 @@ class App extends Component {
                 <label>d2x medizerva</label>
                 <div id="chat-messages" scrolling="yes">
                     {chat}
+                    <div ref={this.messagesEnd}></div>
                 </div>
 
                 <div id="sendmessage">
                     <form onSubmit={this.handleSubmit}>
                         <input
+                            id='sendmessagebox'
                             type="text"
                             value={this.state.userMessage}
                             onInput={this.handleChange}
@@ -107,7 +123,7 @@ class App extends Component {
                         />
                     </form>
 
-                    <button id="send"></button>
+                    <button id="send" onClick={this.handleSubmit}></button>
                 </div>
             </div>
 

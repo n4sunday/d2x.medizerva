@@ -1,35 +1,11 @@
 import axios from 'axios'
-
-
-// handleSubmit = event => {
-//     event.preventDefault();
-//     if (!this.state.userMessage.trim()) return;
-
-//     const msg = {
-//       text: this.state.userMessage,
-//       user: "human"
-//     };
-
-//     this.setState({
-//       conversation: [...this.state.conversation, msg]
-//     });
-
-// fetch("http://localhost:6969/chatbot", {
-//   method: "POST",
-//   headers: { "Content-Type": "application/json" },
-//   body: JSON.stringify({
-//     message: this.state.userMessage
-//   })
-// }).catch( (err) => console.log('error: ',err));
-
-
 //-------------------------API-Server----------------------------
 //const apiurl = 'https://d2xapi.medizerva.com/'
-const apiurl = 'http://d2x.medizerva.com:8000/api'
+const apiurl = 'https://d2xapi.medizerva.com/api'
 export const getAPI = () => async (dispatch) => {
     try {
         console.log('Get API');
-        const response = await axios.get(apiurl)
+        const response = await axios.get(apiurl) 
         const apiData = await response.data
         console.log('API Data ', apiData);
         dispatch(getApiSucces(apiData))

@@ -20,7 +20,7 @@ const Styles = () => (
             //-webkit-filter: drop-shadow(2px 2px 2px black);  
         }
         #bar {
-            background: #325c6a;
+            background: #568af7; //ColorAll
             padding: 5px 5px 5px 5px;          
         }
         #linkbar a{
@@ -32,15 +32,31 @@ const Styles = () => (
         #linkbar a:hover{
             opacity: 0.5;
         }
+        #toggledrop {
+            padding-left: 15px;
+            padding-right: 15px;  
+        }
+        #drop a {
+            color: black;
+        }
+
+        
+
 
 //<--------------------------------------header-
 
 //-home---------------------------------------->
+        .servicecomponent .jumbotron{
+            background: #f4f8fb;
+        }
+        .doctorcomponent .jumbotron{
+            background: #fff;
+        }
         #service {
             margin-top:30px;
             margin-bottom:30px;
             //padding-top:10px;
-            //background: #325c6a;
+            
         }
         #home_img{
             filter: brightness(60%);
@@ -50,7 +66,19 @@ const Styles = () => (
         }
         #content-img p,h1,button{
             font-family: 'Prompt', sans-serif;  
+            cursor: pointer;
+            -webkit-user-select: none;
         }
+        #content-img button {
+            position:relative;
+            height:60px;
+            font-size:30px;
+            padding:0 2em;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+        }
+        
  //-home->-service------------------------------->
             #service-name h2 {
                 font-family: 'Prompt', sans-serif;
@@ -78,12 +106,26 @@ const Styles = () => (
             }
             #service-content p{
                 //text-align: center;
-                font-size: 18px;
+                font-size: 17px;
                 cursor: pointer;
                 font-family: 'Prompt', sans-serif;
 	            //-webkit-user-select: none;
             }
 //<----------------------------home->-service-
+//-home->-doctor----------------------------->
+            #doctor-name {
+                font-family: 'Prompt', sans-serif;
+            }
+            .team_doctor h4{
+                font-weight: bold;
+            }
+            .team_doctor{
+                font-family: 'Raleway', sans-serif;
+            }
+            .team_doctor img{
+                width: 100%;
+            }  
+//<-----------------------------home->-doctor-
 //<--------------------------------------home-
 
 //-help------------------------------------->
@@ -179,7 +221,7 @@ const Styles = () => (
             //border-radius: 20px;
             margin-top: 10px;
             padding: 8px 25px 8px 25px;
-            background-color: #325c6a;
+            background-color: #568af7;
             color: #fff;
         }
         #facebooklogin {
@@ -190,6 +232,30 @@ const Styles = () => (
             width: 100%;
         }
 //<-----------------------------------Login-
+
+//-disease------------------------------------>
+        .diseasecomponent .jumbotron{
+            background: #fff;
+            cursor: pointer;
+            -webkit-user-select: none;
+        }
+        #diseaseHeader {
+            font-family: 'Prompt', sans-serif;
+            border-bottom: 2px solid #000;
+        }
+        #disease-content {
+            font-family: 'Prompt', sans-serif;
+        }
+        #disease-content:hover {
+            background: #568AF7;
+            color: #fff;
+        }
+        #disease-sub {
+            font-family: 'Sarabun', sans-serif;
+            font-size: 18px;
+        }
+        
+//<------------------------------------disease-
 
 //-footer---------------------------------->
         #footer {
@@ -290,7 +356,8 @@ const Styles = () => (
             padding-left:103px;
         }     
         #chatbox {
-            font: 12px "Open Sans", sans-serif;
+            font: 30px 'Prompt',sans-serif;
+            //font: 12px "Open Sans", sans-serif;
             width: 290px;
             background: #fff;
             border: 2px solid #f0f1f2;
@@ -371,13 +438,17 @@ const Styles = () => (
             float: right;
             border-radius: 5px 5px 0px 5px;
         }
+        .bubble {
+            font-family: 'Prompt',sans-serif;
+        }
         .bubble .corner {
             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/bubble-corner.png") 0 0 no-repeat;
             position: absolute;
             width: 7px;
             height: 7px;
             left: -5px;
-            bottom: 0;
+            bottom: 0;  
+              
         }
         div.message.right .corner {
             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/bubble-cornerR.png") 0 0 no-repeat;
@@ -399,7 +470,13 @@ const Styles = () => (
             right: 0px;
             width: 290px;
             background: #fff;
-            padding-bottom: 10px;
+            padding-bottom: 10px;            
+        }
+        #sendmessage input{
+            overflow-wrap: break-word;
+        }
+        #sandmessangbox {
+            //font-family: 'Prompt',sans-serif;
         }
         #sendmessage input {
             border
