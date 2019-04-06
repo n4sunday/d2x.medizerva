@@ -21,6 +21,9 @@ class conclusion extends Component {
                 case 10: return (<div> {this.rnh(0)}{this.rnh(1)}{this.rnh(2)}{this.rnh(3)}{this.rnh(4)}{this.rnh(5)}{this.rnh(6)}{this.rnh(7)}{this.rnh(8)}{this.rnh(9)}{this.rnh(10)} </div>)
                 case 11: return (<div> {this.rnh(0)}{this.rnh(1)}{this.rnh(2)}{this.rnh(3)}{this.rnh(4)}{this.rnh(5)}{this.rnh(6)}{this.rnh(7)}{this.rnh(8)}{this.rnh(9)}{this.rnh(10)}{this.rnh(11)} </div>)
             }
+            // for(let i=0;i<12;i++) {
+            //     return( <div> {this.rnh(i)}</div>)
+            // }
         }
     }
 

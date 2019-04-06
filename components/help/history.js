@@ -4,11 +4,11 @@ const i = 0
 class History extends Component {
     //renderNumHistory
     rnh(x) {
-        return (<li> <p>{this.props.history.hsd[x].hsd1}</p> </li>)
+        return (<li><p>{this.props.history.hsd[x].hsd1}</p></li>)
     }
 
     renderHistory() {
-        if (this.props.history.hsd[i]) {
+        if (this.props.history.hsd[0]) {
             switch (this.props.history.count) {
                 case 0: return (< ul className="timeline" > {this.rnh(0)}  </ul>)
                 case 1: return (< ul className="timeline" > {this.rnh(0)}{this.rnh(1)} </ul>)
@@ -23,6 +23,16 @@ class History extends Component {
                 case 10: return (< ul className="timeline" > {this.rnh(0)}{this.rnh(1)}{this.rnh(2)}{this.rnh(3)}{this.rnh(4)}{this.rnh(5)}{this.rnh(6)}{this.rnh(7)}{this.rnh(8)}{this.rnh(9)}{this.rnh(10)} </ul>)
                 case 11: return (< ul className="timeline" > {this.rnh(0)}{this.rnh(1)}{this.rnh(2)}{this.rnh(3)}{this.rnh(4)}{this.rnh(5)}{this.rnh(6)}{this.rnh(7)}{this.rnh(8)}{this.rnh(9)}{this.rnh(10)}{this.rnh(11)} </ul>)
             }
+            // var timeLine ={}
+            // console.log('count: ' , this.props.history.count)
+            // for(let rhi=0;rhi<=this.props.history.count;rhi++) {
+            //     console.log('rhi = ', rhi) 
+            // //    timeLine = ( this.rnh(rhi) )
+            //    timeLine = Object.assign( timeLine, this.rnh(rhi));
+            //    console.log('timeLine: ', timeLine)
+            // }
+            // console.log('timeline after for: ',timeLine)
+            // return (<ul className="timeline"> {timeLine} </ul> )
         }
     }
     render() {
