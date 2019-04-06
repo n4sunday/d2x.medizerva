@@ -2,9 +2,20 @@
 const Styles = () => (
     <div>
         <style jsx global>{`
-        #load {
-            background-color: black;
-        }
+            {/* .d2x{
+                overflow-y: scroll;
+                -ms-overflow-style: none;  /* IE 10+ */
+            }
+            .d2x::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+} */}
+            ::-webkit-scrollbar {
+                width: 0;
+            }
+            #load {
+                background-color: black;
+            }
 //-header---------------------------------------->
         #logo_img {
             padding-top: 8px;
@@ -20,8 +31,20 @@ const Styles = () => (
             //-webkit-filter: drop-shadow(2px 2px 2px black);  
         }
         #bar {
-            background: #568af7; //ColorAll
-            padding: 5px 5px 5px 5px;          
+            //background-color: #568af7; //ColorAll
+            background-color: transparent;
+            padding: 5px 5px 5px 5px; 
+            transition: 500ms linear;         
+        }
+        #bar2 {
+            background: rgba(0,0,0,0.6);
+            padding: 5px 5px 5px 5px;
+            transition: 700ms linear;    
+        }
+
+       .test{
+            opacity: 1 ;
+            background: red ;
         }
         #linkbar a{
             font-family: 'Prompt', sans-serif;
@@ -46,11 +69,15 @@ const Styles = () => (
 //<--------------------------------------header-
 
 //-home---------------------------------------->
+
         .servicecomponent .jumbotron{
             background: #f4f8fb;
+            height:100vh;
+            
         }
         .doctorcomponent .jumbotron{
             background: #fff;
+            height:100vh;
         }
         #service {
             margin-top:30px;
@@ -60,6 +87,8 @@ const Styles = () => (
         }
         #home_img{
             filter: brightness(60%);
+            height: 100vh;
+            weight:100vw;
         }
         #content-img{
             height: 80vh;
@@ -94,6 +123,7 @@ const Styles = () => (
             #service-content img:hover {
                 opacity: 0.7;
                 filter: alpha(opacity=50);
+                transition: 500ms linear;    
             }
             #service-content .box{
                 border: 1px solid #f1f1f1;

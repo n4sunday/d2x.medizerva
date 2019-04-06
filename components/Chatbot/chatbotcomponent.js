@@ -120,6 +120,7 @@ class App extends Component {
                             onInput={this.handleChange}
                             autoFocus
                             placeholder="พิมพ์ข้อความ"
+                            autoComplete='off'
                         />
                     </form>
 

@@ -61,7 +61,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "carouselExampleSlidesOnly",
-        className: "carousel slide mt-5",
+        className: "carousel slide",
         "data-ride": "carousel",
         __source: {
           fileName: _jsxFileName,
@@ -85,7 +85,6 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         id: "home_img",
         src: _img_Home02_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
-        className: "d-block w-100",
         alt: "...",
         __source: {
           fileName: _jsxFileName,

@@ -1,50 +1,66 @@
-// import Header from '../components/Header'
-// import React, { Component } from 'react';
-// class dev extends Component {
-//     constructor(props) {
-//         super(props)
-//         this.state = { store: '' }
-//     }
-    
-//     render() {
-//         return (
-//             <div>
-//                 <Header />
-//                <div className='mt-5 pt-5 '>SSS</div>
-//             </div>
-//         );
-//     }
-// }
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	Dropdown,
+	NavItem,
+	NavLink,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem
+} from 'reactstrap';
 
-// export default dev
-
-import React,{ Component } from 'react';
+import Header from '../components/Header';
+import React from 'react';
 import { render } from 'react-dom';
-import Typed from 'react-typed';
+import logo_img from '../img/Logo_td2x.png';
+import Link from 'next/link';
+var x ='bar'
+var y ='bar2'
+class App extends React.Component {
+	state = {
+		isTop: true
+	};
 
-class MyComponent extends Component {
-    render() {
-        return (
-            <div>
-                <Typed 
-                    strings={['สวัสดีชาวโลก']} 
-                    typeSpeed={40} 
-                />
-                <br/>
-
-                <Typed 
-                strings={[
-                    'สวัสดีชาวโลก',
-                    'วันนี้วันอะไร',
-                    'Search for brands']}
-                    typeSpeed={40}
-                    backSpeed={50} 
-                    attr="placeholder"
-                    loop >
-                    <input type="text"/>
-                </Typed>
-            </div>
-        );
-    }
+	componentDidMount() {
+		document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 200;
+      console.log("window.scrollY=========================",window.scrollY);
+      
+			if (isTop !== this.state.isTop) {
+				this.setState({ isTop });
+			}
+		});
+	}
+	render() {
+		return (
+			<div>
+				<Navbar className="navbar navbar-expand-lg fixed-top" id={this.state.isTop ? x : y} dark>
+					<Link className="test" href="/">
+						<img id="logo_img" src={logo_img} />
+					</Link>
+					<NavbarToggler onClick={this.toggle} />
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav id="linkbar" className="ml-auto" navbar>
+							<NavItem>
+								<Link href="/">
+									<a className="nav-item nav-link active px-3">หน้าหลัก</a>
+								</Link>
+							</NavItem>
+						</Nav>
+					</Collapse>
+				</Navbar>
+				<div style={{ height: '100vh', backgroundColor: 'green' }}></div>
+				<div style={{ height: '100vh', backgroundColor: 'red' }}></div>
+        <div style={{ height: '100vh', backgroundColor: 'yellow' }}></div>
+			</div>
+		);
+	}
 }
-export default MyComponent
+{
+}
+
+export default App;

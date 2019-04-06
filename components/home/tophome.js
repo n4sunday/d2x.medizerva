@@ -26,12 +26,12 @@ class Tophome extends Component {
                     attr="placeholder"
                     loop >
                     <input type="text" />
-                </Typed> */}
+                </Typed> className="d-block w-100"*/}
 
-                <div id="carouselExampleSlidesOnly" className="carousel slide mt-5" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img id='home_img' src={home_img} className="d-block w-100" alt="..." />
+                            <img id='home_img' src={home_img}  alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                                 <div id='content-img' className="d-flex justify-content-center align-items-center" >
                                     <section >
