@@ -28,14 +28,14 @@ class Tophome extends Component {
                     <input type="text" />
                 </Typed> className="d-block w-100"*/}
 
-                <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img id='home_img' src={home_img}  alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
+                            <img id='home_img' class="d-block" src={home_img}  alt="..." />
+                            <div className="carousel-caption d-none d-md-block d-flex justify-content-center align-items-center">
                                 <div id='content-img' className="d-flex justify-content-center align-items-center" >
                                     <section >
-                                        <h1 className="display-4 font-weigth-bold ">
+                                        <h1 className="font-weigth-bold ">
                                             <Typed
                                                 strings={[
                                                     'ให้คำปรึกษาวินิจฉัยอาการ',

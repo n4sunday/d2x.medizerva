@@ -2,17 +2,15 @@ import Header from '../components/Header'
 import React, { Component } from 'react'
 import ChatbotPopup from '../components/Chatbot/ChatbotPopup'
 import Disease from '../components/Disease'
-class disease extends Component {
-    render() {
-        return (
-            <div><Header />
+import Topdisease from '../components/Disease/topdisease'
 
-                <div className='mt-5'>
-                    <Disease />
-                </div>
-                <ChatbotPopup />
-            </div>
-        )
-    }
-}
-export default disease
+const disease = () => (
+	<div>
+		<Header t="barT" c="barB" />
+		<Topdisease />
+		<Disease />
+		<ChatbotPopup />
+		
+	</div>
+)
+export default disease;

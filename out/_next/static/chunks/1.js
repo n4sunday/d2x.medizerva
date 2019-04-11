@@ -61,7 +61,6 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "carouselExampleSlidesOnly",
-        className: "carousel slide",
         "data-ride": "carousel",
         __source: {
           fileName: _jsxFileName,
@@ -84,6 +83,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         id: "home_img",
+        class: "d-block",
         src: _img_Home02_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
         alt: "...",
         __source: {
@@ -92,7 +92,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "carousel-caption d-none d-md-block",
+        className: "carousel-caption d-none d-md-block d-flex justify-content-center align-items-center",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
@@ -113,7 +113,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
-        className: "display-4 font-weigth-bold ",
+        className: "font-weigth-bold ",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38

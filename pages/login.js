@@ -13,7 +13,7 @@ class login extends Component {
 
     render() {
         return (
-            <div><Header />
+            <div><Header t='barB' c='barT'/>
 
                 <div className='boxlogin'>
                     <div id='login' className='container-fluid' >
