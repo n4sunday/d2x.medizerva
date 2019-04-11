@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import Pusher from 'pusher-js'
 import axios from 'axios'
 const api = 'https://d2xapi.medizerva.com/chatbot/'
 //const api = 'http://localhost:5000/'
 
 
-class App extends Component {
+class App extends PureComponent {
     
     constructor(props) {
         super(props);

@@ -28,17 +28,10 @@ var _jsxFileName = "C:\\Users\\Sunday\\Documents\\Web Dev\\d2x.medizerva\\compon
 
 var doctor = function doctor() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "doctorcomponent",
+    className: "doctorcomponent  justify-content-center align-items-center d-flex",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "jumbotron x",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -46,14 +39,14 @@ var doctor = function doctor() {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -61,198 +54,198 @@ var doctor = function doctor() {
     className: "col-sm-12 col-md-6 col-lg-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 11
     },
     __self: this
   }, "\u0E1E\u0E1A\u0E41\u0E1E\u0E17\u0E22\u0E4C\u0E02\u0E2D\u0E07\u0E40\u0E23\u0E32")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-sm-12 col-md-12 col-lg-12 pt-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-xs-12 col-sm-6 col-md-3 col-lg-3 pt-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "border pl-1 pr-1 pt-1 pb-1",
+    className: "tm-dr border pl-1 pr-1 pt-1 pb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "team_doctor ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _img_doctor_doctor1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "pl-4 pt-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 20
     },
     __self: this
   }, "Jessica Wally"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "pl-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 21
     },
     __self: this
   }, "Doctor")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-xs-12 col-sm-6 col-md-3 col-lg-3 pt-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "border pl-1 pr-1 pt-1 pb-1",
+    className: "tm-dr border pl-1 pr-1 pt-1 pb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "team_doctor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _img_doctor_doctor2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "pl-4 pt-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 29
     },
     __self: this
   }, "Iai Donas"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "pl-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 30
     },
     __self: this
   }, "Doctor")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-xs-12 col-sm-6 col-md-3 col-lg-3 pt-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "border pl-1 pr-1 pt-1 pb-1",
+    className: "tm-dr border pl-1 pr-1 pt-1 pb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "team_doctor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _img_doctor_doctor3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 38
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "pl-4 pt-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 39
     },
     __self: this
   }, "Amanda Denyl"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "pl-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 40
     },
     __self: this
   }, "Doctor")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-xs-12 col-sm-6 col-md-3 col-lg-3 pt-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "border pl-1 pr-1 pt-1 pb-1",
+    className: "tm-dr border pl-1 pr-1 pt-1 pb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "team_doctor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _img_doctor_doctor4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 47
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "pl-4 pt-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 48
     },
     __self: this
   }, "Jason Davis"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "pl-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 49
     },
     __self: this
-  }, "Doctor"))))))))));
+  }, "Doctor")))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (doctor);

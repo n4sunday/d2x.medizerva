@@ -16,8 +16,6 @@ import {
 	DropdownItem
 } from 'reactstrap'
 
-var x ='bar'
-var y ='bar2'
 export default class Header extends React.Component {
 	constructor(props) {
 		super(props);
@@ -44,7 +42,7 @@ export default class Header extends React.Component {
 		return (
             // bg-transparent
 			<div>
-				<Navbar className="navbar navbar-expand-lg fixed-top" id={this.state.isTop ? x : y} dark>
+				<Navbar className="navbar navbar-expand-lg fixed-top" id={this.state.isTop ? this.props.t : this.props.c} dark>
 					<Link href="/">
 						<img id="logo_img" src={logo_img} />
 					</Link>
@@ -68,7 +66,7 @@ export default class Header extends React.Component {
 							</NavItem>
 							<NavItem>
 								<Link href="/disease">
-									<a className="nav-item nav-link  px-3">โรคระบบย่อยอาหาร</a>
+									<a className="nav-item nav-link  px-3">โรคระบบขับถ่าย</a>
 								</Link>
 							</NavItem>
 							<NavItem>

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 const i = 0
-class History extends Component {
+class History extends PureComponent {
     //renderNumHistory
     rnh(x) {
         return (<li><p>{this.props.history.hsd[x].hsd1}</p></li>)

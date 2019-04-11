@@ -4,7 +4,7 @@ import History from '../components/help/history'
 import ChatbotPopup from '../components/Chatbot/ChatbotPopup'
 import Conclusion from '../components/help/conclusion'
 import { connect } from 'react-redux'
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class help extends Component {
     renderHelpQandA() {
@@ -34,7 +34,7 @@ class help extends Component {
 
     render() {
         return (
-            <div><Header />
+            <div><Header t='barB' c='barT'/>
                 {this.renderHelpQandA()}
                 <ChatbotPopup />
             </div>

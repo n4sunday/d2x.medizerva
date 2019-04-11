@@ -87,3 +87,13 @@ export const resetHistoryStore = () => ({ type: 'RESET_HISTORY' })
 export const set = status => ({ type: 'SET', status })
 export const reset = status => ({ type: 'RESET', status })
 //--------------------------------------------------------------
+
+
+//---------------------------State-Disease----------------------
+export const callSetContents = (status) => (dispatch) => {
+    dispatch(setContents(status))
+}
+export const setContents = stateContent => ({
+    type: 'setStateContent', stateContent
+})
+//--------------------------------------------------------------

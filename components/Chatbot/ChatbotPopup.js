@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Chatbotcomponent from './chatbotcomponent'
 
-class ChatbotPopup extends Component {
+class ChatbotPopup extends PureComponent {
     constructor(props) {
         super(props);
         this.state = { isToggleOn: true };
@@ -24,10 +24,11 @@ class ChatbotPopup extends Component {
     render() {
         return (
             <div>
-                <div id='bt-popup' className='block'>
-                    {this.renderChatbot()}
-                    <button onClick={this.handleClick} className='bt-click btn btn-primary btn-block rounded-0' type="button" >คุยกับผู้ช่วย</button>
+                <div id='bt-popup' className='block' onClick={this.handleClick} >
+                    
+                   คุยกับผู้ช่วย
                 </div>
+                {this.renderChatbot()}
 
             </div>
         );

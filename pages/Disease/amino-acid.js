@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import ChatbotPopup from '../../components/Chatbot/ChatbotPopup'
 import Link from 'next/link'
 const aminoacid = () => (
-    <div><Header />
+    <div><Header t='barB' c='barT' />
 
         <div className='mt-5'>
             <div className='diseasecomponent'>
