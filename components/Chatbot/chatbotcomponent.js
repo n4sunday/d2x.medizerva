@@ -1,12 +1,17 @@
 import React, { PureComponent } from 'react'
 import Pusher from 'pusher-js'
 import axios from 'axios'
+import { connect } from 'react-redux'
+import { store } from '../../pages/_app'
+import { callSetChatbox } from '../../redux/actions/'
 const api = 'https://d2xapi.medizerva.com/chatbot/'
 //const api = 'http://localhost:5000/'
+import asis from '../../img/chat/asis.svg'
+import user from '../../img/chat/user.svg'
 
 
 class App extends PureComponent {
-    
+
     constructor(props) {
         super(props);
         this.state = {
@@ -23,7 +28,7 @@ class App extends PureComponent {
         this.messagesEnd.current.scrollIntoView({ behavior: 'smooth' })
     }
     componentDidMount() {
-        
+
         this.scrollToBottom()
         const pusher = new Pusher('f1c69857418afbff36c5', {
             cluster: 'ap1',
@@ -79,22 +84,20 @@ class App extends PureComponent {
             if (className == 'human')
                 return (
                     <div key={`${className}-${i}`} className={`${className} message right`}>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg"  />
-                        <div className="bubble">
+                        <img src={user} />
+                        <span className="bubble">
                             {text}
-                            <div class="corner"></div>
-                        </div>
-                        {/* <span className="chat-content">{text}</span> */}
+                        </span>
                     </div>
                 );
             else if (className == 'ai')
                 return (
                     <div key={`${className}-${i}`} className={`${className} message`}>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
-                        <div className="bubble">
+                        <img src={asis} />
+                        <span className="bubble">
                             {text}
-                            <div class="corner"></div>
-                        </div>
+                            {/* <div class="corner"></div> */}
+                        </span>
                     </div>
                 );
         };
@@ -105,7 +108,7 @@ class App extends PureComponent {
 
         return (
             <div id="chatbox">
-                <label>d2x medizerva</label>
+                <label onClick={() => store.dispatch(callSetChatbox(!this.props.chatState))}>d2x medizerva</label>
                 <div id="chat-messages" scrolling="yes">
                     {chat}
                     <div ref={this.messagesEnd}></div>
@@ -132,4 +135,9 @@ class App extends PureComponent {
     }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        chatState: state.chatbox,
+    }
+}
+export default connect(mapStateToProps)(App);

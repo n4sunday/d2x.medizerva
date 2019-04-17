@@ -1,39 +1,36 @@
 import React, { PureComponent } from 'react';
 import Chatbotcomponent from './chatbotcomponent'
+import { connect } from 'react-redux'
+import { store } from '../../pages/_app'
+import { callSetChatbox } from '../../redux/actions/'
 
 class ChatbotPopup extends PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = { isToggleOn: true };
-
-        // This binding is necessary to make `this` work in the callback
-        this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick() {
-        this.setState(state => ({
-            isToggleOn: !state.isToggleOn
-        }))
-    }
     renderChatbot() {
-        if (this.state.isToggleOn == false)
+        if (this.props.chatState == true)
             return (
                 <Chatbotcomponent />
             )
+        else
+            return (
+                <div id='bt-popup' className='block' onClick={() => store.dispatch(callSetChatbox(!this.props.chatState))} >
+                    คุยกับผู้ช่วย
+                </div>
+            )
     }
-
     render() {
         return (
-            <div>
-                <div id='bt-popup' className='block' onClick={this.handleClick} >
-                    
-                   คุยกับผู้ช่วย
-                </div>
+            <>
+
                 {this.renderChatbot()}
 
-            </div>
+            </>
         );
     }
 }
-
-export default ChatbotPopup
+const mapStateToProps = (state) => {
+    return {
+        chatState: state.chatbox,
+    }
+}
+export default connect(mapStateToProps)(ChatbotPopup)
 // rounded-0

@@ -27,7 +27,7 @@ class MyApp extends App {
     const { Component, pageProps, reduxStore } = this.props
     console.log(reduxStore)
     return (
-      <div className='d2x'>
+      <div className=''>
         <Head>
           <title>d2x medizerva</title>
           <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>

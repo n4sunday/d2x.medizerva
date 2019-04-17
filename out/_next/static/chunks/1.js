@@ -83,7 +83,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         id: "home_img",
-        class: "d-block",
+        className: "d-block",
         src: _img_Home02_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
         alt: "...",
         __source: {

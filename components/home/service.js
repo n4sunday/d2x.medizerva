@@ -1,8 +1,7 @@
-import hours24 from '../../img/home/hours24.svg';
-import diagnose from '../../img/home/diagnose.svg';
-import pills from '../../img/home/pills.svg';
-import hospital from '../../img/home/hospital.svg';
-
+import hours24 from '../../img/home/hours24.svg'
+import diagnose from '../../img/home/diagnose.svg'
+import pills from '../../img/home/pills.svg'
+import hospital from '../../img/home/hospital.svg'
 const service = () => (
 	<div className="servicecomponent d-flex justify-content-center align-items-center">
 		<div className="container">
@@ -18,7 +17,7 @@ const service = () => (
 								<div className="pl-1 pr-1 pt-1 pb-4">
 									<div className="box pl-5 pb-3 pt-3 pl-5 pb-3 pt-3">
 										<img src={hours24} width="120px" alt="Cinque Terre" />
-										<p className="h4">บริการช่วยเหลือ 24 ชั่วโมง</p>
+										<p className="h4" >บริการช่วยเหลือ 24 ชั่วโมง</p>
 									</div>
 								</div>
 							</div>
@@ -57,7 +56,5 @@ const service = () => (
 			</div>
 		</div>
 	</div>
-);
-export default service;
-
-/**/
+)
+export default service

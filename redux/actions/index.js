@@ -97,3 +97,12 @@ export const setContents = stateContent => ({
     type: 'setStateContent', stateContent
 })
 //--------------------------------------------------------------
+
+//---------------------------State-Disease----------------------
+export const callSetChatbox = (status) => (dispatch) => {
+    dispatch(setChatbox(status))
+}
+export const setChatbox = stateChatbox => ({
+    type: 'setStateChatbox', stateChatbox
+})
+//--------------------------------------------------------------

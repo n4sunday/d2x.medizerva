@@ -1,19 +1,8 @@
 const Styles = () => (
     <div>
         <style jsx global>{`
-            {/* .d2x{
-                overflow-y: scroll;
-                -ms-overflow-style: none;  /* IE 10+ */
-            }
-            .d2x::-webkit-scrollbar { /* WebKit */
-    width: 0;
-    height: 0;
-} */}
             ::-webkit-scrollbar {
                 width: 0;
-            }
-            #load {
-                background-color: black;
             }
 //-header---------------------------------------->
         #logo_img {
@@ -23,7 +12,6 @@ const Styles = () => (
             width: 120px;
             cursor: pointer;
             -webkit-user-select: none;
-            
         }
         #logo_img:hover {
             opacity: 0.7;
@@ -250,44 +238,72 @@ const Styles = () => (
             }
 //<-----------------------help->-helpQandA-
 //<-----------------------------------help-
-
+           
  //-Login--------------------------------->
-        #login {
-            padding-top: 160px;
-            padding-left:150px;
-            padding-right:150px;
+            .login{
+                transition: 200ms linear;  
+                font: 18px 'Prompt', sans-serif;
+                filter: 'brightness(100%)';
+                height:100vh;
+                float:right ;
+                padding: 150px 50px 50px 50px;
+                max-height: 100vh;
+                background-color: #fff;
+                //background-color: rgb(0,0,0,0.4);
+            }
+            .login h1{
+                transition: 200ms linear;  
+                text-align: center ;
+            }
+            .login h1:hover{
+                transition: 300ms linear;  
+                text-align: center ;
+                color: #4482ff;
+            }
+            .btLoging{
+                text-align:center;
+                padding:2px 0 2px 0;
+                color:#fff;
+                width: 350px;
+                background: #4482ff;
+                cursor:pointer;
+                border: 2px solid #4482ff;
+            }
+            .btLoging:hover{
+                transition: 300ms linear;  
+                color:#fff;
+                background: #5E94FF;
+                border: 2px solid #5E94FF;
+            }
+            .btFacebook{
+                text-align:center;
+                padding:2px 0 2px 0;
+                color:#fff;
+                width: 350px;
+                background: #4267b2;
+                cursor:pointer;
+                border: 2px solid #4267b2;
+            }
+            .btFacebook:hover{
+                transition: 300ms linear;  
+                background: #395999;
+            }
+            .btGoogle{
+                text-align:center;
+                padding:2px 0 2px 0;
+                color:#B3B3B3;
+                width: 350px;
+                background: #fff;
+                cursor:pointer;
+                border: 2px solid #f1f1f1;
+            }
+            .btGoogle:hover{
+                transition: 300ms linear;  
+                color:#fff;
+                background: #dd3c2a;
+                border: 2px solid #EB402D;
+            }
             
-        }
-        #loginContent {
-            background-color: #ebebeb;
-            border-radius: 5px;
-            padding-top: 50px;
-            padding-left:50px;
-            padding-right:50px;
-            padding-bottom: 50px;
-        }
-        #login #loginContent {
-            text-align: center;
-            font-family: 'Prompt', sans-serif;
-            font-size: 17px;
-        }
-        #loginContent input{
-            margin-top: 10px;
-        }
-        #loginContent #btlogin{
-            //border-radius: 20px;
-            margin-top: 10px;
-            padding: 8px 25px 8px 25px;
-            background-color: #568af7;
-            color: #fff;
-        }
-        #facebooklogin {
-            background-color: #4267b2;
-        }
-
-        .boxlogin {
-            width: 100%;
-        }
 //<-----------------------------------Login-
 
 //-Disease------------------------------------>
@@ -369,9 +385,9 @@ const Styles = () => (
                     margin-right: auto;
                 }
                 #login {
-                padding-top: 160px;
-                padding-left:60px;
-                padding-right:60px;
+                    padding-top: 160px;
+                    padding-left:60px;
+                    padding-right:60px;
                 
             }
         }
@@ -431,7 +447,7 @@ const Styles = () => (
             bottom: 0;
             right:0;
             position: fixed;
-            //margin-right: 20px;
+            margin-right: 20px;
             width: 290px;
             text-align:center;
             padding-top: 5px;
@@ -440,8 +456,8 @@ const Styles = () => (
             color:#fff;
             cursor: pointer;
             -webkit-user-select: none;
-            border-radius:10px  0 0 0 / 10px 0 0 0;
-            //border-radius: 10px 10px 0 0  / 10px 10px 0 0;
+            border-radius:10px 10px 0  0 / 10px 10px 0  0;
+            //border-radius: 10px 0 0 0  / 10px 0 0 0;
             -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
         } 
         #bt-popup:hover{
@@ -454,29 +470,27 @@ const Styles = () => (
             padding-right:103px;
             padding-left:103px;
         }     
-        #chatbox {            
+        #chatbox {              
             font: 30px 'Prompt',sans-serif;
             //font: 12px "Open Sans", sans-serif;
-            width: 290px;
+            width: 320px;
             background: #fff;
-            border: 2px solid #f0f1f2;
-            border-radius: 10px  0 0 10px / 10px 0 0 10px;
+            //border: 2px solid #f0f1f2;
+            -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+            border-radius: 10px 10px 0 0  / 10px 10px 0 0 ;
             border-color:#f0f1f2;
             overflow: hidden;
             height: 484px;
             bottom: 0;
-            margin-bottom: 40px;
+            //margin-bottom: 40px;
             //margin-bottom: 38px;
             right:0;
-            //margin-right: 20px;
+            margin-right: 20px;
             position: fixed;
         }
         #chat-messages {
-            //display: inline-block;
-            //justify-content: flex-end;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 290px;
+            //margin-bottom: 20px;
+            width: 100%;
             height: 370px;
             overflow-y: scroll;
             overflow-x: hidden;
@@ -494,21 +508,31 @@ const Styles = () => (
             margin-top: 0;
         }
         #chatbox label {
-            color: #aab8c2;
+            //99e0ff
+            background:#F2F2F2;
+            padding: 6px 0 6px 0;
+            color: #000;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 15px;
             text-align: center;
-            margin: 15px 0;
-            width: 290px;
+            width: 100%;
             display: block;
+            border-bottom: 1px solid #DEDFE0;
+            margin-bottom: 0;
         }
+        #chatbox label:hover {
+            background:#99e0ff;
+        }
+        #chatbox label:hover {
+            color: #fff;
+        }
+
         #chat-messages div.message {
             padding: 0 0 30px 58px;
             clear: both;
-            margin-bottom: 45px;
         }
         #chat-messages div.message.right {
-            padding: 0 58px 30px 0;
+            padding: 0 58px 0 0; //xx
             margin-right: -19px;
             margin-left: 19px;
         }
@@ -517,7 +541,6 @@ const Styles = () => (
             margin-left: -38px;
             border-radius: 50%;
             width: 30px;
-            margin-top: 12px;
         }
         #chat-messages div.message.right img {
             float: right;
@@ -525,35 +548,33 @@ const Styles = () => (
             margin-right: -38px;
         }
         .message .bubble {
-            background: #f0f4f7;
+            background: #f1f1f1;
             font-size: 13px;
             font-weight: 600;
             padding: 12px 13px;
-            border-radius: 5px 5px 5px 0px;
-            color: #8495a3;
-            position: relative;
+            border-radius: 0 15px 15px 15px;
+            color: #8C8C8C;
+            //position: relative;
             float: left;
+            display: inline-block;
+            max-width: 175px;
+            overflow-wrap: break-word;
+        }
+        .message.right .bubble {
+            //margin-left: 40px;
+            overflow-wrap: inherit;
+            margin-right: 0px !important;
+            max-width: 175px;
+            overflow-wrap: break-word;
         }
         #chat-messages div.message.right .bubble {
             float: right;
-            border-radius: 5px 5px 0px 5px;
+            border-radius: 15px 0 15px 15px ;
         }
         .bubble {
             font-family: 'Prompt',sans-serif;
-        }
-        .bubble .corner {
-            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/bubble-corner.png") 0 0 no-repeat;
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            left: -5px;
-            bottom: 0;  
-              
-        }
-        div.message.right .corner {
-            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/bubble-cornerR.png") 0 0 no-repeat;
-            left: auto;
-            right: -5px;
+            overflow-wrap: break-word;
+            margin-bottom: 15px;
         }
         .bubble span {
             color: #aab8c2;
@@ -563,27 +584,26 @@ const Styles = () => (
             bottom: -22px;
         }
         #sendmessage {
-            height: 60px;
+            font-family: 'Prompt',sans-serif;
             border-top: 1px solid #e7ebee;
             position: absolute;
             bottom: 0;
             right: 0px;
-            width: 290px;
+            width: 100%;
             background: #fff;
-            padding-bottom: 10px;            
+            padding-bottom: 10px;    
+            padding-left: 10px;        
         }
         #sendmessage input{
             overflow-wrap: break-word;
-        }
-        #sandmessangbox {
-            //font-family: 'Prompt',sans-serif;
+            width: 80%;
         }
         #sendmessage input {
             border
         }
         #sendmessage input {
             background: #fff;
-            margin: 21px 0 0 21px;
+            margin: 8px 0 0 8px;
             border: none;
             padding: 0;
             font-size: 14px;
@@ -837,27 +857,7 @@ const Styles = () => (
                     padding-bottom: 30px;
                     background: #f0f0f5;
                     height:100%;
-                }
-                    //Login
-                #login {
-                    padding-top: 50px;
-                    padding-left:15px;
-                    padding-right:15px;
-                    
-                }
-                #loginContent {
-                    background-color: #ebebeb;
-                    border-radius: 5px;
-                    padding-top: 50px;
-                    padding-left:50px;
-                    padding-right:50px;
-                    padding-bottom: 50px;
-                }
-                #login #loginContent {
-                    text-align: center;
-                    font-family: 'Prompt', sans-serif;
-                    font-size: 17px;
-                }
+                }                
         }
         @media (max-width: 992px) {}
         @media (max-width: 1200px) {}
