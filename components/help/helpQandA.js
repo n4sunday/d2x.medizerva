@@ -123,9 +123,9 @@ class helpQandA extends PureComponent {
 	}
 	renderWaitGetData() {
 		if (this.props.api.title) {
-			return this.renderAPI();
+			return this.renderAPI(); //ถ้าข้อมูลมาแสดงผล
 		} else
-			return (
+			return ( //แสดงตอนไม่มีข้อมูล
 				<div className="loading d-flex justify-content-center align-items-center">
 					<div className="lds-dual-ring" />
 				</div>
@@ -133,7 +133,7 @@ class helpQandA extends PureComponent {
 	}
 
 	render() {
-		return <div>{this.renderWaitGetData()}</div>;
+		return <div>{this.renderWaitGetData()}</div>; //เรียกฟังค์ชันข้างบน
 	}
 }
 const mapStateToProps = (state) => {

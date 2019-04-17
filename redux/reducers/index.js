@@ -3,6 +3,7 @@ import apiReducer from './apiReducer'
 import mainStore from './mainStore'
 import historyReducer from './historyReducer'
 import diseaseReducer from './diseaseReducer'
+import chatboxReducer from './chatboxReducer'
 
 
 const rootReducer = combineReducers({
@@ -10,6 +11,7 @@ const rootReducer = combineReducers({
     main: mainStore,
     history: historyReducer,
     disease:diseaseReducer,
+    chatbox:chatboxReducer,
 })
 
 export default rootReducer

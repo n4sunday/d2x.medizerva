@@ -31,7 +31,7 @@ class Tophome extends Component {
                 <div id="carouselExampleSlidesOnly" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img id='home_img' class="d-block" src={home_img}  alt="..." />
+                            <img id='home_img' className="d-block" src={home_img}  alt="..." />
                             <div className="carousel-caption d-none d-md-block d-flex justify-content-center align-items-center">
                                 <div id='content-img' className="d-flex justify-content-center align-items-center" >
                                     <section >
