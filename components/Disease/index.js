@@ -62,7 +62,7 @@ const mapStateToProps = (state) => {
 		disease: state.disease,
 	}
 }
-export default connect(mapStateToProps)(disease) 
+export default connect(mapStateToProps)(disease)
 
 
 
