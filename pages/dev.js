@@ -1,57 +1,35 @@
-// import React, { Component } from "react"
-// import firebase from "firebase"
-// import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	Dropdown,
+	NavItem,
+	NavLink,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem
+} from 'reactstrap';
 
-// firebase.initializeApp({
-// 	apiKey: "AIzaSyBHV43rBiJT-3ITJvLfhzdYXvaqoWYePVY",
-// 	authDomain: "t-d2x-78677.firebaseapp.com",
-// })
+import Header from '../components/Header';
+import React from 'react';
+import { render } from 'react-dom';
+import logo_img from '../img/Logo_td2x.png';
+import Link from 'next/link';
+import { Progress } from 'reactstrap'
+class App extends React.Component {
+	
+	render() {
+		return (
+			<div>
+				<Progress animated color='primary' value="100" />
+			</div>
+		);
+	}
+}
+{
+}
 
-// class App extends Component {
-// 	state = { isSignedIn: false }
-// 	uiConfig = {
-// 		signInFlow: "popup",
-// 		signInOptions: [
-// 			firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-// 			firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-// 			firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-// 			firebase.auth.GithubAuthProvider.PROVIDER_ID,
-// 			firebase.auth.EmailAuthProvider.PROVIDER_ID
-// 		],
-// 		callbacks: {
-// 			signInSuccess: () => false
-// 		}
-// 	}
-
-// 	componentDidMount = () => {
-// 		firebase.auth().onAuthStateChanged(user => {
-// 			this.setState({ isSignedIn: !!user })
-// 			console.log("user", user)
-// 		})
-// 	}
-
-// 	render() {
-// 		return (
-// 			<div className="App">
-// 				{this.state.isSignedIn ? (
-// 					<span>
-// 						<div>Signed In!</div>
-// 						<button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-// 						<h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-// 						<img
-// 							alt="profile picture"
-// 							src={firebase.auth().currentUser.photoURL}
-// 						/>
-// 					</span>
-// 				) : (
-// 						<StyledFirebaseAuth
-// 							uiConfig={this.uiConfig}
-// 							firebaseAuth={firebase.auth()}
-// 						/>
-// 					)}
-// 			</div>
-// 		)
-// 	}
-// }
-
-// export default App
+export default App;

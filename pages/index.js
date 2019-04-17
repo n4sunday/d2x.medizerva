@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import Home from './home'
 import ChatbotPopup from '../components/Chatbot/ChatbotPopup'
 const Index = () => (
-    <div className='d2x'>
+    <div >
         <Layout>
             <Home />
         </Layout>
