@@ -308,16 +308,18 @@ const Styles = () => (
 
 //-Disease------------------------------------>
         .diseasecomponent{
-            font-family: 'Prompt', sans-serif;
+            font-family: 'Sarabun', sans-serif;
             background: #fff;
             cursor: pointer;
             //-webkit-user-select: none;
         }
+        .header-disease {
+            font-family: 'Prompt', sans-serif;           
+        }
         #diseaseHeader {
-            font-family: 'Prompt', sans-serif;
             border-bottom: 1px solid #CCCCCC;
         }
-        #disease-content {
+        #disease-content { 
             font-family: 'Prompt', sans-serif;
         }
         #disease-content:hover {
@@ -328,7 +330,7 @@ const Styles = () => (
         }
         #disease-sub {
             font-family: 'Sarabun', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
         }
 //-Disease--Topdisease--------------------------->  
         #disease-img{
@@ -336,6 +338,7 @@ const Styles = () => (
             height: 55vh;
         }
         .disease-content-article{
+            font-size: 18px;
             background: ;
             -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
         }
@@ -470,7 +473,8 @@ const Styles = () => (
             padding-right:103px;
             padding-left:103px;
         }     
-        #chatbox {              
+        #chatbox {  
+            z-index: 10;            
             font: 30px 'Prompt',sans-serif;
             //font: 12px "Open Sans", sans-serif;
             width: 320px;
@@ -491,7 +495,7 @@ const Styles = () => (
         #chat-messages {
             //margin-bottom: 20px;
             width: 100%;
-            height: 370px;
+            height: 390px;
             overflow-y: scroll;
             overflow-x: hidden;
             scroll-behavior: auto;
@@ -509,6 +513,7 @@ const Styles = () => (
         }
         #chatbox label {
             //99e0ff
+            cursor: pointer;
             background:#F2F2F2;
             padding: 6px 0 6px 0;
             color: #000;
@@ -521,7 +526,7 @@ const Styles = () => (
             margin-bottom: 0;
         }
         #chatbox label:hover {
-            background:#99e0ff;
+            background:#00b2ff;
         }
         #chatbox label:hover {
             color: #fff;
@@ -559,6 +564,9 @@ const Styles = () => (
             display: inline-block;
             max-width: 175px;
             overflow-wrap: break-word;
+        }
+        .message{
+            margin-top:10px;
         }
         .message.right .bubble {
             //margin-left: 40px;
@@ -639,6 +647,81 @@ const Styles = () => (
 
 
 //-conclusion-sheet---------------------------->
+        .conclusion {
+            //background-color: red;
+            font-family: 'Prompt', sans-serif;  
+        }
+        .clip-leg{
+            width: 173px;
+            height:50px;
+            background-color: #868491;
+            border-radius: 40px 40px 0 0;
+            -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
+        }
+        .clip-leg-x{
+            width: 117px;
+            height:28px;
+            background-color: #fff !important;
+            margin: 22px 28px 0px 28px;
+            border-radius: 50px 50px 0 0;
+        }
+        .clip-body{
+            background-color: #B4B6BC !important;
+            width:357px;
+            height:94px;
+            margin-top: -8px;
+            border-radius: 0 0 30px 30px;
+            z-index:3;
+            -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
+        }
+        .conclusion-sheet{
+            margin: 20px 30px 20px 30px;
+        }
+        .conclusion .sheet{
+            //margin: 50px 50px 50px 50px;
+            border-radius: 50px;
+            background-color: #DEDEDE !important;
+            z-index: 2;
+            -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
+        }
+        .paper-sheet{
+            -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
+            top:0;
+            left:0;
+            //position: absolute;
+            //border-radius: 19px;
+            margin: -50px 33px 33px 33px;
+            padding:55px 30px 40px 30px;
+            background-color: #fff !important;
+        }
+        .conclusion-h{
+            font-size:35px;
+            text-align:center;
+        }
+        .conclusion-sh{
+            font-size:22px;
+            margin:15px 0 8px 0;
+            padding: 2px 20px 2px 20px;
+            background-color: #99e0ff;
+            border-radius: 20px;
+        }
+        .allcontent{
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .content-profile{
+            
+        } 
+        .content-profile p{
+            //line-height: 0.3;
+            //text-indent: 20px;
+        }
+        .doctor-advice{
+            text-indent: 30px;
+        }
+
+
+
         .card-body h3{
             text-align: center;
             border-bottom: 2px solid #000;
@@ -660,9 +743,6 @@ const Styles = () => (
             border-bottom: 2px solid #000;
             padding-bottom: 10px;
             margin-bottom: 10px;
-        }
-        #doctor-advice{
-            text-indent: 40px;
         }
         
         

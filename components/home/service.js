@@ -14,7 +14,7 @@ const service = () => (
 				<div id="" className="col-xs-12 col-sm-12 col-md-12 col-lg-9">
 					<div className="container-fluid">
 						<div className="row">
-							<div id="service-content" className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div id="service-content" className="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
 								<div className="pl-1 pr-1 pt-1 pb-4">
 									<div className="box pl-5 pb-3 pt-3 pl-5 pb-3 pt-3">
 										<img src={hours24} width="120px" alt="Cinque Terre" />

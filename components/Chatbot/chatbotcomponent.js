@@ -83,7 +83,7 @@ class App extends PureComponent {
             //console.log('className:', className);
             if (className == 'human')
                 return (
-                    <div key={`${className}-${i}`} className={`${className} message right`}>
+                    <div key={`${className}-${i}`} className={`${className} message right `}>
                         <img src={user} />
                         <span className="bubble">
                             {text}
@@ -122,7 +122,7 @@ class App extends PureComponent {
                             value={this.state.userMessage}
                             onInput={this.handleChange}
                             autoFocus
-                            placeholder="พิมพ์ข้อความ"
+                            placeholder="..."
                             autoComplete='off'
                         />
                     </form>

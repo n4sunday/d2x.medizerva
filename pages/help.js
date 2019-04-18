@@ -34,7 +34,7 @@ class help extends Component {
 
     render() {
         return (
-            <div><Header t='barB' c='barT'/>
+            <div><Header t='barB' c='barB'/>
                 {this.renderHelpQandA()}
                 <ChatbotPopup />
             </div>
