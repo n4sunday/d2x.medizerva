@@ -29,30 +29,61 @@ class conclusion extends Component {
 
     render() {
         return (
-                <div className='container-fluid'>
+            <div className='container conclusion mt-5'>
+            <div className='row'>
+                <div className='col-lg-7'>
+                    <div className='conclusion-sheet d-block '>
+                        <div className='d-flex justify-content-center'>
+                            <div className='clip-leg d-block justify-content-center'>
+                                <div className='clip-leg-x'></div>
+                            </div>
+                        </div>
 
-                    <div className='row align-items-center'>
-                        <div id='conclusion-sheet' className='col-lg-4 offset-md-4 mt-5 mb-5 pt-4 pb-3 border bg-light'>
-                            <div className='card'>
-                                <div class="card-body">
-                                    <h3><strong>สรุปผลการวินิจฉัย</strong></h3>
-                                    <h5><strong>ข้อมูลผู้ป่วย</strong></h5>
-                                    <div id='data-user'><p>ชื่อ : นาย รักชาติ ณ สงขลา</p><p>อายุ :  23 ปี</p></div>
-                                     <h5><strong>อาการที่แสดง</strong></h5>
-                                     <div id='symptom-user'>
-                                       
-                                        {this.renderHistory()}<br />
-                                    </div>
-                                    <h5><strong>คำแนะนำของแพทย์</strong></h5>
-                                    <div id='doctor-advice'><p>คุณควรนอนหลับผักผ่อนเยอะ ๆ และไปตรวจสุขภาพประจำปีบ้าง และออกกำลังกายอย่างสม่ำเสมอ และไปพบปะพูดคุยกับผู้คนในสังคม</p></div>
-                                    <h5><strong>ยาสำหรับรักษาอาการ</strong></h5>
+                        <div className='sheet d-inline-block'>
+                            <div className='d-flex justify-content-center'>
+                                <div className='clip-body'></div>
+                            </div>
+
+                            <div className='paper-sheet d-inline-block'>
+
+                                <p className='conclusion-h'>สรุปผลการวินิจฉัย</p>
+
+                                <div className='conclusion-sh'>ข้อมูลผู้ป่วย</div>
+                                <div className='allcontent content-profile'>
+                                    <ul class="list-unstyled">
+                                        <li>ชื่อ : นาย โรเบิร์ด บาราเทียน</li>
+                                        <li>อายุ : 42 ปี</li>
+                                    </ul>
+                                </div>
+
+                                <div className='conclusion-sh'>อาการที่แสดง</div>
+                                <div className='symptom-user'>
+                                    {this.renderHistory()}<br />
+                                </div>
+                                <div className='conclusion-sh'>คำแนะนำของแพทย์</div>
+                                <div className='allcontent doctor-advice'>
+                                    <p>
+                                        คุณควรนอนหลับผักผ่อนเยอะๆ และไปตรวจสุขภาพประจำปีบ้าง และออกกำลังกายอย่างสม่ำเสมอ และไปพบปะพูดคุยกับผู้คนในสังคม
+                                    </p>
+                                </div>
+
+                                <div className='conclusion-sh'>ยาสำหรับรักษาอาการ</div>
+                                <div className='allcontent'>
                                     <li>ยาธาตุน้ำขาว</li>
                                     <li>ยาพาราเซตามอล</li>
+                                    <li>ยาพาราเซตามอล</li>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <div className='col-lg-5'>
+                    
+                </div>
+            </div>
+        </div>
         );
     }
 }

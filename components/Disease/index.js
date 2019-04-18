@@ -33,7 +33,7 @@ class disease extends PureComponent {
 			<div className="container-fluid">
 				<div className="diseasecomponent">
 					<div className="row"></div>
-					<h2 onClick={this.StateButton} className="pt-5 pb-5 pl-5 pr-5">
+					<h2 onClick={this.StateButton} className="header-disease pt-5 pb-5 pl-5 pr-5">
 						<strong>โรคและวิธีการรักษา</strong>
 					</h2>
 					<div className="row">
